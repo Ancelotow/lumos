@@ -20,13 +20,18 @@ struct HomeView: View {
                 .font(.system(size: 32))
             
             if let home = homeManager.home {
-                WrappingHStack(0...home.rooms.count, id:\.self) { i in
-                    if i == home.rooms.count {
-                        RoomItem.factoryForAdd().padding(.top, 5)
-                    } else {
-                        RoomItem.factoryFromHMRoom(room: home.rooms[i]).padding(.top, 5)
+                HStack {
+                    Spacer()
+                    WrappingHStack(0...home.rooms.count, id:\.self) { i in
+                        if i == home.rooms.count {
+                            RoomItem.factoryForAdd().padding(.top, 5)
+                        } else {
+                            RoomItem.factoryFromHMRoom(room: home.rooms[i]).padding(.top, 5)
+                        }
                     }
-                }.frame(minWidth: 250)
+                    Spacer()
+                }
+                .frame(minWidth: 250)
             }
            
             

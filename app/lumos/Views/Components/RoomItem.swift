@@ -22,7 +22,8 @@ struct RoomItem: View {
     }
     
     static func factoryFromHMRoom(room: HMRoom) -> RoomItem {
-        return RoomItem(icon: "living-room", title: room.name, backgroundColor: Color.gray) { _ in
+        var background = Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.3)
+        return RoomItem(icon: "living-room", title: room.name, backgroundColor: background) { _ in
             // TODO
         }
     }
