@@ -8,52 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31A22B718BDA0017600B /* lumosApp.swift */; };
-		A54F31A52B718BDA0017600B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31A42B718BDA0017600B /* ContentView.swift */; };
+		A54F31A52B718BDA0017600B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31A42B718BDA0017600B /* HomeView.swift */; };
 		A54F31A72B718BDC0017600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31A62B718BDC0017600B /* Assets.xcassets */; };
 		A54F31AA2B718BDC0017600B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31A92B718BDC0017600B /* Preview Assets.xcassets */; };
-		A54F31B42B718BDC0017600B /* lumosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31B32B718BDC0017600B /* lumosTests.swift */; };
-		A54F31BE2B718BDC0017600B /* lumosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31BD2B718BDC0017600B /* lumosUITests.swift */; };
-		A54F31C02B718BDC0017600B /* lumosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31BF2B718BDC0017600B /* lumosUITestsLaunchTests.swift */; };
 		A54F31C62B718BDC0017600B /* lumos Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A54F31C52B718BDC0017600B /* lumos Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A54F31CB2B718BDC0017600B /* lumosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31CA2B718BDC0017600B /* lumosApp.swift */; };
 		A54F31CD2B718BDC0017600B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31CC2B718BDC0017600B /* ContentView.swift */; };
 		A54F31CF2B718BDD0017600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31CE2B718BDD0017600B /* Assets.xcassets */; };
 		A54F31D22B718BDD0017600B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31D12B718BDD0017600B /* Preview Assets.xcassets */; };
-		A54F31DC2B718BDD0017600B /* lumos_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31DB2B718BDD0017600B /* lumos_Watch_AppTests.swift */; };
-		A54F31E62B718BDD0017600B /* lumos_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31E52B718BDD0017600B /* lumos_Watch_AppUITests.swift */; };
-		A54F31E82B718BDD0017600B /* lumos_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31E72B718BDD0017600B /* lumos_Watch_AppUITestsLaunchTests.swift */; };
+		A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA812B8D2A3C000B315A /* LumosBody.swift */; };
+		A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A54F31B02B718BDC0017600B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A54F31972B718BDA0017600B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A54F319E2B718BDA0017600B;
-			remoteInfo = lumos;
-		};
-		A54F31BA2B718BDC0017600B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A54F31972B718BDA0017600B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A54F319E2B718BDA0017600B;
-			remoteInfo = lumos;
-		};
 		A54F31C72B718BDC0017600B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A54F31972B718BDA0017600B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A54F31C42B718BDC0017600B;
-			remoteInfo = "lumos Watch App";
-		};
-		A54F31D82B718BDD0017600B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A54F31972B718BDA0017600B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A54F31C42B718BDC0017600B;
-			remoteInfo = "lumos Watch App";
-		};
-		A54F31E22B718BDD0017600B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A54F31972B718BDA0017600B /* Project object */;
 			proxyType = 1;
@@ -79,42 +47,22 @@
 /* Begin PBXFileReference section */
 		A54F319F2B718BDA0017600B /* lumos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lumos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54F31A22B718BDA0017600B /* lumosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosApp.swift; sourceTree = "<group>"; };
-		A54F31A42B718BDA0017600B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A54F31A42B718BDA0017600B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A54F31A62B718BDC0017600B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54F31A92B718BDC0017600B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A54F31AF2B718BDC0017600B /* lumosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lumosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A54F31B32B718BDC0017600B /* lumosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosTests.swift; sourceTree = "<group>"; };
-		A54F31B92B718BDC0017600B /* lumosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lumosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A54F31BD2B718BDC0017600B /* lumosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosUITests.swift; sourceTree = "<group>"; };
-		A54F31BF2B718BDC0017600B /* lumosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A54F31C52B718BDC0017600B /* lumos Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lumos Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54F31CA2B718BDC0017600B /* lumosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosApp.swift; sourceTree = "<group>"; };
 		A54F31CC2B718BDC0017600B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A54F31CE2B718BDD0017600B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54F31D12B718BDD0017600B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A54F31D72B718BDD0017600B /* lumos Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lumos Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A54F31DB2B718BDD0017600B /* lumos_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumos_Watch_AppTests.swift; sourceTree = "<group>"; };
-		A54F31E12B718BDD0017600B /* lumos Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lumos Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A54F31E52B718BDD0017600B /* lumos_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumos_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		A54F31E72B718BDD0017600B /* lumos_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumos_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5A7BA812B8D2A3C000B315A /* LumosBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumosBody.swift; sourceTree = "<group>"; };
+		A5FAC0022B8D15E00009F4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5FAC0042B8D1CA50009F4DB /* lumos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lumos.entitlements; sourceTree = "<group>"; };
+		A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A54F319C2B718BDA0017600B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31AC2B718BDC0017600B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31B62B718BDC0017600B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,20 +76,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A54F31D42B718BDD0017600B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31DE2B718BDD0017600B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -149,11 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				A54F31A12B718BDA0017600B /* lumos */,
-				A54F31B22B718BDC0017600B /* lumosTests */,
-				A54F31BC2B718BDC0017600B /* lumosUITests */,
 				A54F31C92B718BDC0017600B /* lumos Watch App */,
-				A54F31DA2B718BDD0017600B /* lumos Watch AppTests */,
-				A54F31E42B718BDD0017600B /* lumos Watch AppUITests */,
 				A54F31A02B718BDA0017600B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,11 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A54F319F2B718BDA0017600B /* lumos.app */,
-				A54F31AF2B718BDC0017600B /* lumosTests.xctest */,
-				A54F31B92B718BDC0017600B /* lumosUITests.xctest */,
 				A54F31C52B718BDC0017600B /* lumos Watch App.app */,
-				A54F31D72B718BDD0017600B /* lumos Watch AppTests.xctest */,
-				A54F31E12B718BDD0017600B /* lumos Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,10 +100,13 @@
 		A54F31A12B718BDA0017600B /* lumos */ = {
 			isa = PBXGroup;
 			children = (
+				A5FAC0072B8D20D40009F4DB /* Views */,
+				A5FAC0042B8D1CA50009F4DB /* lumos.entitlements */,
+				A5FAC0022B8D15E00009F4DB /* Info.plist */,
 				A54F31A22B718BDA0017600B /* lumosApp.swift */,
-				A54F31A42B718BDA0017600B /* ContentView.swift */,
 				A54F31A62B718BDC0017600B /* Assets.xcassets */,
 				A54F31A82B718BDC0017600B /* Preview Content */,
+				A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */,
 			);
 			path = lumos;
 			sourceTree = "<group>";
@@ -188,23 +117,6 @@
 				A54F31A92B718BDC0017600B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A54F31B22B718BDC0017600B /* lumosTests */ = {
-			isa = PBXGroup;
-			children = (
-				A54F31B32B718BDC0017600B /* lumosTests.swift */,
-			);
-			path = lumosTests;
-			sourceTree = "<group>";
-		};
-		A54F31BC2B718BDC0017600B /* lumosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A54F31BD2B718BDC0017600B /* lumosUITests.swift */,
-				A54F31BF2B718BDC0017600B /* lumosUITestsLaunchTests.swift */,
-			);
-			path = lumosUITests;
 			sourceTree = "<group>";
 		};
 		A54F31C92B718BDC0017600B /* lumos Watch App */ = {
@@ -226,21 +138,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A54F31DA2B718BDD0017600B /* lumos Watch AppTests */ = {
+		A5A7BA802B8D2A22000B315A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A54F31DB2B718BDD0017600B /* lumos_Watch_AppTests.swift */,
+				A5A7BA812B8D2A3C000B315A /* LumosBody.swift */,
 			);
-			path = "lumos Watch AppTests";
+			path = Components;
 			sourceTree = "<group>";
 		};
-		A54F31E42B718BDD0017600B /* lumos Watch AppUITests */ = {
+		A5FAC0072B8D20D40009F4DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A54F31E52B718BDD0017600B /* lumos_Watch_AppUITests.swift */,
-				A54F31E72B718BDD0017600B /* lumos_Watch_AppUITestsLaunchTests.swift */,
+				A5A7BA802B8D2A22000B315A /* Components */,
+				A54F31A42B718BDA0017600B /* HomeView.swift */,
 			);
-			path = "lumos Watch AppUITests";
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,42 +177,6 @@
 			productReference = A54F319F2B718BDA0017600B /* lumos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A54F31AE2B718BDC0017600B /* lumosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A54F31F22B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumosTests" */;
-			buildPhases = (
-				A54F31AB2B718BDC0017600B /* Sources */,
-				A54F31AC2B718BDC0017600B /* Frameworks */,
-				A54F31AD2B718BDC0017600B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A54F31B12B718BDC0017600B /* PBXTargetDependency */,
-			);
-			name = lumosTests;
-			productName = lumosTests;
-			productReference = A54F31AF2B718BDC0017600B /* lumosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A54F31B82B718BDC0017600B /* lumosUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A54F31F52B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumosUITests" */;
-			buildPhases = (
-				A54F31B52B718BDC0017600B /* Sources */,
-				A54F31B62B718BDC0017600B /* Frameworks */,
-				A54F31B72B718BDC0017600B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A54F31BB2B718BDC0017600B /* PBXTargetDependency */,
-			);
-			name = lumosUITests;
-			productName = lumosUITests;
-			productReference = A54F31B92B718BDC0017600B /* lumosUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		A54F31C42B718BDC0017600B /* lumos Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54F31EB2B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumos Watch App" */;
@@ -318,42 +194,6 @@
 			productReference = A54F31C52B718BDC0017600B /* lumos Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A54F31D62B718BDD0017600B /* lumos Watch AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A54F31F82B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumos Watch AppTests" */;
-			buildPhases = (
-				A54F31D32B718BDD0017600B /* Sources */,
-				A54F31D42B718BDD0017600B /* Frameworks */,
-				A54F31D52B718BDD0017600B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A54F31D92B718BDD0017600B /* PBXTargetDependency */,
-			);
-			name = "lumos Watch AppTests";
-			productName = "lumos Watch AppTests";
-			productReference = A54F31D72B718BDD0017600B /* lumos Watch AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A54F31E02B718BDD0017600B /* lumos Watch AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A54F31FB2B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumos Watch AppUITests" */;
-			buildPhases = (
-				A54F31DD2B718BDD0017600B /* Sources */,
-				A54F31DE2B718BDD0017600B /* Frameworks */,
-				A54F31DF2B718BDD0017600B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A54F31E32B718BDD0017600B /* PBXTargetDependency */,
-			);
-			name = "lumos Watch AppUITests";
-			productName = "lumos Watch AppUITests";
-			productReference = A54F31E12B718BDD0017600B /* lumos Watch AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -367,24 +207,8 @@
 					A54F319E2B718BDA0017600B = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					A54F31AE2B718BDC0017600B = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = A54F319E2B718BDA0017600B;
-					};
-					A54F31B82B718BDC0017600B = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = A54F319E2B718BDA0017600B;
-					};
 					A54F31C42B718BDC0017600B = {
 						CreatedOnToolsVersion = 15.2;
-					};
-					A54F31D62B718BDD0017600B = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = A54F31C42B718BDC0017600B;
-					};
-					A54F31E02B718BDD0017600B = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = A54F31C42B718BDC0017600B;
 					};
 				};
 			};
@@ -402,11 +226,7 @@
 			projectRoot = "";
 			targets = (
 				A54F319E2B718BDA0017600B /* lumos */,
-				A54F31AE2B718BDC0017600B /* lumosTests */,
-				A54F31B82B718BDC0017600B /* lumosUITests */,
 				A54F31C42B718BDC0017600B /* lumos Watch App */,
-				A54F31D62B718BDD0017600B /* lumos Watch AppTests */,
-				A54F31E02B718BDD0017600B /* lumos Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -421,40 +241,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A54F31AD2B718BDC0017600B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31B72B718BDC0017600B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A54F31C32B718BDC0017600B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A54F31D22B718BDD0017600B /* Preview Assets.xcassets in Resources */,
 				A54F31CF2B718BDD0017600B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31D52B718BDD0017600B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31DF2B718BDD0017600B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,25 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A54F31A52B718BDA0017600B /* ContentView.swift in Sources */,
+				A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */,
+				A54F31A52B718BDA0017600B /* HomeView.swift in Sources */,
+				A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */,
 				A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31AB2B718BDC0017600B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A54F31B42B718BDC0017600B /* lumosTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31B52B718BDC0017600B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A54F31BE2B718BDC0017600B /* lumosUITests.swift in Sources */,
-				A54F31C02B718BDC0017600B /* lumosUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,50 +273,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A54F31D32B718BDD0017600B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A54F31DC2B718BDD0017600B /* lumos_Watch_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A54F31DD2B718BDD0017600B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A54F31E62B718BDD0017600B /* lumos_Watch_AppUITests.swift in Sources */,
-				A54F31E82B718BDD0017600B /* lumos_Watch_AppUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A54F31B12B718BDC0017600B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A54F319E2B718BDA0017600B /* lumos */;
-			targetProxy = A54F31B02B718BDC0017600B /* PBXContainerItemProxy */;
-		};
-		A54F31BB2B718BDC0017600B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A54F319E2B718BDA0017600B /* lumos */;
-			targetProxy = A54F31BA2B718BDC0017600B /* PBXContainerItemProxy */;
-		};
 		A54F31C82B718BDC0017600B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A54F31C42B718BDC0017600B /* lumos Watch App */;
 			targetProxy = A54F31C72B718BDC0017600B /* PBXContainerItemProxy */;
-		};
-		A54F31D92B718BDD0017600B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A54F31C42B718BDC0017600B /* lumos Watch App */;
-			targetProxy = A54F31D82B718BDD0017600B /* PBXContainerItemProxy */;
-		};
-		A54F31E32B718BDD0017600B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A54F31C42B718BDC0017600B /* lumos Watch App */;
-			targetProxy = A54F31E22B718BDD0017600B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -725,12 +465,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = lumos/lumos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lumos/Preview Content\"";
 				DEVELOPMENT_TEAM = 267F8UQ7GW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lumos/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = lumos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -746,9 +488,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -758,12 +504,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = lumos/lumos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lumos/Preview Content\"";
 				DEVELOPMENT_TEAM = 267F8UQ7GW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lumos/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = lumos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -779,178 +527,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A54F31F32B718BDD0017600B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lumos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lumos";
-			};
-			name = Debug;
-		};
-		A54F31F42B718BDD0017600B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lumos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lumos";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A54F31F62B718BDD0017600B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumosUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = lumos;
-			};
-			name = Debug;
-		};
-		A54F31F72B718BDD0017600B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumosUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = lumos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A54F31F92B718BDD0017600B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joelan.lumos-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lumos Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lumos Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		A54F31FA2B718BDD0017600B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joelan.lumos-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lumos Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lumos Watch App";
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Release;
-		};
-		A54F31FC2B718BDD0017600B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joelan.lumos-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "lumos Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		A54F31FD2B718BDD0017600B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 267F8UQ7GW;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joelan.lumos-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "lumos Watch App";
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -980,42 +564,6 @@
 			buildConfigurations = (
 				A54F31F02B718BDD0017600B /* Debug */,
 				A54F31F12B718BDD0017600B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A54F31F22B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A54F31F32B718BDD0017600B /* Debug */,
-				A54F31F42B718BDD0017600B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A54F31F52B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumosUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A54F31F62B718BDD0017600B /* Debug */,
-				A54F31F72B718BDD0017600B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A54F31F82B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumos Watch AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A54F31F92B718BDD0017600B /* Debug */,
-				A54F31FA2B718BDD0017600B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A54F31FB2B718BDD0017600B /* Build configuration list for PBXNativeTarget "lumos Watch AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A54F31FC2B718BDD0017600B /* Debug */,
-				A54F31FD2B718BDD0017600B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
