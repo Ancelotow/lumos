@@ -25,7 +25,7 @@ struct LumosBody<Content: View>: View {
             Color.black.opacity(0.8)
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
+            VStack(alignment: .leading) {
                 content
                 Spacer()
             }

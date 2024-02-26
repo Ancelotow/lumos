@@ -17,6 +17,8 @@
 		A54F31CF2B718BDD0017600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31CE2B718BDD0017600B /* Assets.xcassets */; };
 		A54F31D22B718BDD0017600B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31D12B718BDD0017600B /* Preview Assets.xcassets */; };
 		A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA812B8D2A3C000B315A /* LumosBody.swift */; };
+		A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA832B8D2EFC000B315A /* RoomItem.swift */; };
+		A5A7BA892B8D3F9A000B315A /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = A5A7BA882B8D3F9A000B315A /* WrappingHStack */; };
 		A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,7 @@
 		A54F31CE2B718BDD0017600B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54F31D12B718BDD0017600B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5A7BA812B8D2A3C000B315A /* LumosBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumosBody.swift; sourceTree = "<group>"; };
+		A5A7BA832B8D2EFC000B315A /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
 		A5FAC0022B8D15E00009F4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A5FAC0042B8D1CA50009F4DB /* lumos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lumos.entitlements; sourceTree = "<group>"; };
 		A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A7BA892B8D3F9A000B315A /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A7BA812B8D2A3C000B315A /* LumosBody.swift */,
+				A5A7BA832B8D2EFC000B315A /* RoomItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -173,6 +178,9 @@
 				A54F31C82B718BDC0017600B /* PBXTargetDependency */,
 			);
 			name = lumos;
+			packageProductDependencies = (
+				A5A7BA882B8D3F9A000B315A /* WrappingHStack */,
+			);
 			productName = lumos;
 			productReference = A54F319F2B718BDA0017600B /* lumos.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +229,9 @@
 				Base,
 			);
 			mainGroup = A54F31962B718BDA0017600B;
+			packageReferences = (
+				A5A7BA872B8D3E8C000B315A /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = A54F31A02B718BDA0017600B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */,
+				A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */,
 				A54F31A52B718BDA0017600B /* HomeView.swift in Sources */,
 				A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */,
 				A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */,
@@ -569,6 +581,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5A7BA872B8D3E8C000B315A /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5A7BA882B8D3F9A000B315A /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5A7BA872B8D3E8C000B315A /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A54F31972B718BDA0017600B /* Project object */;
 }
