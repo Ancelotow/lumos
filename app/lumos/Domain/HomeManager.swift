@@ -16,6 +16,14 @@ class HomeManager: NSObject, ObservableObject, HMHomeManagerDelegate {
         super.init()
         homeManager.delegate = self
     }
+    
+    func addNewRoom(roomName: String, callback: @escaping (HMRoom?, Error?) -> Void) {
+        guard let home = self.home else {
+            print("You have no home")
+            return
+        }
+        home.addRoom(withName: roomName, completionHandler: callback)
+    }
 
     func homeManagerDidUpdateHomes(_ manager: HMHomeManager) {
         self.home = manager.homes.first

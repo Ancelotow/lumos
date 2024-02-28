@@ -28,7 +28,6 @@ struct LumosBody<Content: View>: View {
             
             VStack(alignment: .leading) {
                 content
-                Spacer()
             }
             .padding(.all, 20)
             .frame(

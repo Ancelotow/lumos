@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A534FC6A2B8FA73600DFAADB /* NewRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC692B8FA73600DFAADB /* NewRoomView.swift */; };
+		A534FC702B8FAA9E00DFAADB /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */; };
+		A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC712B8FACB800DFAADB /* TextInput.swift */; };
 		A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31A22B718BDA0017600B /* lumosApp.swift */; };
 		A54F31A52B718BDA0017600B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31A42B718BDA0017600B /* HomeView.swift */; };
 		A54F31A72B718BDC0017600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31A62B718BDC0017600B /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A534FC692B8FA73600DFAADB /* NewRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomView.swift; sourceTree = "<group>"; };
+		A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		A534FC712B8FACB800DFAADB /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 		A54F319F2B718BDA0017600B /* lumos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lumos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54F31A22B718BDA0017600B /* lumosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosApp.swift; sourceTree = "<group>"; };
 		A54F31A42B718BDA0017600B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -83,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A534FC6B2B8FA73D00DFAADB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A5FAC0072B8D20D40009F4DB /* Views */,
+				A5A7BA802B8D2A22000B315A /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A534FC6C2B8FA75400DFAADB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		A54F31962B718BDA0017600B = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +127,13 @@
 		A54F31A12B718BDA0017600B /* lumos */ = {
 			isa = PBXGroup;
 			children = (
-				A5FAC0072B8D20D40009F4DB /* Views */,
+				A534FC6C2B8FA75400DFAADB /* Domain */,
+				A534FC6B2B8FA73D00DFAADB /* Presentation */,
 				A5FAC0042B8D1CA50009F4DB /* lumos.entitlements */,
 				A5FAC0022B8D15E00009F4DB /* Info.plist */,
 				A54F31A22B718BDA0017600B /* lumosApp.swift */,
 				A54F31A62B718BDC0017600B /* Assets.xcassets */,
 				A54F31A82B718BDC0017600B /* Preview Content */,
-				A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */,
 			);
 			path = lumos;
 			sourceTree = "<group>";
@@ -147,6 +170,8 @@
 			children = (
 				A5A7BA812B8D2A3C000B315A /* LumosBody.swift */,
 				A5A7BA832B8D2EFC000B315A /* RoomItem.swift */,
+				A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */,
+				A534FC712B8FACB800DFAADB /* TextInput.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -154,8 +179,8 @@
 		A5FAC0072B8D20D40009F4DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A5A7BA802B8D2A22000B315A /* Components */,
 				A54F31A42B718BDA0017600B /* HomeView.swift */,
+				A534FC692B8FA73600DFAADB /* NewRoomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,10 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */,
+				A534FC702B8FAA9E00DFAADB /* MyButton.swift in Sources */,
 				A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */,
 				A54F31A52B718BDA0017600B /* HomeView.swift in Sources */,
 				A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */,
+				A534FC6A2B8FA73600DFAADB /* NewRoomView.swift in Sources */,
 				A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */,
+				A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
