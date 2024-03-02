@@ -12,33 +12,56 @@ struct NewRoomView: View {
     @StateObject private var homeManager = HomeManager()
     @Environment(\.presentationMode) var presentationMode
     @State private var roomName: String = ""
+    @State private var isShowingPopup = false
+    @State private var isLoading = false
+
 
     var body: some View {
-        LumosBody {
-            Text("New room")
-                .foregroundColor(.white)
-                .font(.system(size: 32))
+        ZStack {
+            LumosBody {
+                Text("New room")
+                    .foregroundColor(.white)
+                    .font(.system(size: 32))
+                
+                Spacer()
+                
+                TextInput(
+                    title: "Name of your new room",
+                    value: $roomName
+                )
+                
+                if isLoading {
+                    HStack {
+                        Spacer()
+                        CircularLoader()
+                        Spacer()
+                    }
+                } else {
+                    MyButton(
+                        title: "Validate"
+                    ) { _addNewRoom() }
+                    .frame(maxWidth: .infinity, alignment: .center)
+                }
+            }
             
-            Spacer()
-            
-            TextInput(
-                title: "Name of your new room",
-                value: $roomName
-            )
-            
-            MyButton(
-                title: "Validate"
-            ) { _addNewRoom() }
-            .frame(maxWidth: .infinity, alignment: .center)
+            if isShowingPopup {
+                Popup(message: "Une erreur est survenue", buttonLabel: "Close") {
+                    isShowingPopup = false
+                }
+            }
         }
     }
     
     private func _addNewRoom() {
+        isLoading = true
         homeManager.addNewRoom(roomName: roomName) { room, error in
             if let error = error {
                 print(error)
+                isShowingPopup = true
+            } else {
+                self.presentationMode.wrappedValue.dismiss()
             }
-            self.presentationMode.wrappedValue.dismiss()
+            isLoading = false
         }
     }
 }
