@@ -32,16 +32,6 @@ struct RoomView: View {
                     Text("\(_room.accessories[i].name) => \(_room.accessories[i].category.description)")
                 }
             }
-            
-            if isDeleting {
-                PopupAction(
-                    message: "Are you sure to delete the room \"\(_room.name)\" ?",
-                    okLabel: "Delete",
-                    cancelLabel: "Cancel",
-                    okAction: _deleteRoom,
-                    cancelAction: _cancelDeletation
-                )
-            }
         }
     }
     

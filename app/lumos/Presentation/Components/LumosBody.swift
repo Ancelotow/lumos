@@ -42,7 +42,8 @@ struct LumosBody<Content: View>: View {
             .cornerRadius(50)
             .padding(.top, 40)
             .padding(.all, 10)
+            
         }
     }
+    
 }
-

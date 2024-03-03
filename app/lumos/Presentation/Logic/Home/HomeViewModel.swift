@@ -5,8 +5,6 @@
 //  Created by Owen Ancelot on 03/03/2024.
 //
 
-import Foundation
-import HomeKit
 import Combine
 
 class HomeViewModel: ObservableObject {

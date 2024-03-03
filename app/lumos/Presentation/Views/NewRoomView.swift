@@ -10,55 +10,58 @@ import HomeKit
 
 struct NewRoomView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var roomName: String = ""
-    @State private var isShowingPopup = false
-    @State private var isLoading = false
-
+    @ObservedObject private var viewModel = NewRoomViewModel()
+    @State private var roomName = ""
+    @State private var isShowingError = false
+    @State private var errorMessage = ""
 
     var body: some View {
-        ZStack {
-            LumosBody {
-                Title("New room")
-                
-                Spacer()
-                
-                TextInput(
-                    title: "Name of your new room",
-                    value: $roomName
-                )
-                
-                if isLoading {
+        LumosBody {
+            Title("New room")
+            Spacer()
+            TextInput(
+                title: "Name of your new room",
+                value: $roomName
+            )
+            
+            switch viewModel.state {
+                case .loading:
                     HStack {
                         Spacer()
                         CircularLoader()
                         Spacer()
                     }
-                } else {
-                    MyButton(
-                        title: "Validate"
-                    ) { _addNewRoom() }
-                    .frame(maxWidth: .infinity, alignment: .center)
-                }
+                
+                default:
+                    MyButton(title: "Validate", callback: _addNewRoom)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                
             }
-            
-            if isShowingPopup {
-                Popup(message: "An error has occurred", buttonLabel: "Close") {
-                    isShowingPopup = false
-                }
-            }
+        }
+        .onReceive(viewModel.$state) { newState in
+            handleStateChange(newState)
+        }
+        .alert(isPresented: $isShowingError) {
+            Alert(title: Text(errorMessage))
         }
     }
     
     private func _addNewRoom() {
-        isLoading = true
-        HomeManager.Instance.addNewRoom(roomName: roomName) { room, error in
-            if let error = error {
-                print(error.localizedDescription)
-                isShowingPopup = true
-            } else {
+        viewModel.addRoom(name: roomName)
+    }
+    
+    private func handleStateChange(_ newState: NewRoomViewState) {
+        switch newState {
+            case .success:
                 self.presentationMode.wrappedValue.dismiss()
-            }
-            isLoading = false
+            
+            case .failure(let error):
+                print("error")
+                errorMessage = error
+                isShowingError = true
+            
+            default:
+                break
         }
     }
 }
