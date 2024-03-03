@@ -22,7 +22,7 @@ struct CircularLoader: View {
                 }
             }
             .frame(width: 50, height: 50)
-            .foregroundColor(Color(red: 1, green: 0.53, blue: 0.37))
+            .foregroundColor(MyColors.accent.color)
             .padding()
     }
 }

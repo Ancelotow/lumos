@@ -23,8 +23,8 @@ struct MyButton: View {
         }
         .frame(width: 277, height: 14, alignment: .center)
         .padding()
-        .background(Color(red: 1, green: 0.53, blue: 0.37))
-        .foregroundColor(.white)
+        .background(MyColors.accent.color)
+        .foregroundColor(MyColors.white.color)
         .fontWeight(Font.Weight.semibold)
         .cornerRadius(8)
         

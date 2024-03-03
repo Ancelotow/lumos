@@ -23,7 +23,8 @@ struct LumosBody<Content: View>: View {
                 .edgesIgnoringSafeArea(.all)
                 .blur(radius: 10)
         
-            Color.black.opacity(0.8)
+            MyColors.black.color
+                .opacity(0.8)
                 .edgesIgnoringSafeArea(.all)
             
             VStack(alignment: .leading) {
@@ -37,7 +38,7 @@ struct LumosBody<Content: View>: View {
               maxHeight: .infinity,
               alignment: .topLeading
             )
-            .background(Color(red: 0.76, green: 0.76, blue: 0.76).opacity(0.3))
+            .background(MyColors.darkgrey.color.opacity(0.3))
             .cornerRadius(50)
             .padding(.top, 40)
             .padding(.all, 10)

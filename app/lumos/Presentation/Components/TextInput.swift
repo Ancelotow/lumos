@@ -19,10 +19,10 @@ struct TextInput: View {
     
     var body: some View {
         TextField(title, text: value)
-            .foregroundColor(Color.white)
+            .foregroundColor(MyColors.white.color)
             .frame(height: 14, alignment: .center)
             .padding()
-            .background(Color(red: 0.76, green: 0.76, blue: 0.76).opacity(0.3))
+            .background(MyColors.darkgrey.color.opacity(0.3))
             .cornerRadius(8)
         
     }

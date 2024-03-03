@@ -19,9 +19,7 @@ struct NewRoomView: View {
     var body: some View {
         ZStack {
             LumosBody {
-                Text("New room")
-                    .foregroundColor(.white)
-                    .font(.system(size: 32))
+                Title("New room")
                 
                 Spacer()
                 

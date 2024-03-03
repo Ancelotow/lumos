@@ -25,7 +25,7 @@ struct RoomItem<Content: View>: View {
                         .padding(5)
                     if let title = self.title {
                         Text(title)
-                            .foregroundColor(.white)
+                            .foregroundColor(MyColors.white.color)
                             .font(.system(size: 13))
                             .fontWeight(Font.Weight.semibold)
                             .padding(5)

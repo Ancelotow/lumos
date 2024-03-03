@@ -14,18 +14,19 @@ struct Popup: View {
     
         
     var body: some View {
-        Color.black.opacity(0.3)
+        MyColors.black.color
+            .opacity(0.3)
             .edgesIgnoringSafeArea(.all)
         
         VStack {
             Text(message)
-                .foregroundColor(.white)
+                .foregroundColor(MyColors.white.color)
                 .padding()
             
             MyButton(title: buttonLabel, callback: buttonAction)
         }
         .padding()
-        .background(Color.black)
+        .background(MyColors.black.color)
         .cornerRadius(20)
         .frame(width: 300, height: 200)
     }

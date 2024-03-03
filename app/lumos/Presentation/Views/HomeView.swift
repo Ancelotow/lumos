@@ -15,9 +15,7 @@ struct HomeView: View {
     
     var body: some View {
         LumosBody {
-            Text("Welcome back\non Lumos")
-                .foregroundColor(.white)
-                .font(.system(size: 32))
+            Title("Welcome back\non Lumos")
             
             if let home = homeManager.home {
                 HStack {
@@ -28,7 +26,7 @@ struct HomeView: View {
                                 NewRoomView()
                             }.padding(.top, 5)
                         } else {
-                            RoomItem(icon: "living-room", title: home.rooms[i].name, backgroundColor: Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.3)) {
+                            RoomItem(icon: "living-room", title: home.rooms[i].name, backgroundColor: MyColors.grey.color.opacity(0.3)) {
                                 Text("Living Room View")
                             }.padding(.top, 5)
                         }
