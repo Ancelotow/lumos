@@ -10,8 +10,6 @@ import HomeKit
 
 @main
 struct lumosApp: App {
-    let homeManager = HomeManager.Instance
-    
     var body: some Scene {
         WindowGroup {
             NavigationStack {

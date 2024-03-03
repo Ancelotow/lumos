@@ -9,7 +9,7 @@ import Foundation
 import HomeKit
 
 class HomeManager: NSObject, ObservableObject, HMHomeManagerDelegate {
-    @Published var home: HMHome?  {
+    @Published private(set) var home: HMHome?  {
         didSet {
             updateHome()
         }
@@ -50,6 +50,7 @@ class HomeManager: NSObject, ObservableObject, HMHomeManagerDelegate {
     
     private func updateHome() {
         DispatchQueue.main.async {
+            print("Home updated")
             self.objectWillChange.send()
         }
     }

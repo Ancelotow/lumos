@@ -12,6 +12,8 @@ import WrappingHStack
 
 struct HomeView: View {
     @ObservedObject private var viewModel = HomeViewModel()
+    @State private var showingAlert = true
+    @State private var alertMessage = ""
     
     var body: some View {
         LumosBody {
@@ -19,17 +21,29 @@ struct HomeView: View {
             
             HStack {
                 Spacer()
-                WrappingHStack(0...viewModel.rooms.count, id:\.self) { i in
-                    if i == viewModel.rooms.count {
-                        RoomItem(icon: "add", title: nil, backgroundColor: Color.black) {
-                            NewRoomView()
-                        }.padding(.top, 5)
-                    } else {
-                        RoomItem(icon: "living-room", title: viewModel.rooms[i].name, backgroundColor: MyColors.grey.color.opacity(0.3)) {
-                            RoomView(viewModel.rooms[i])
-                        }.padding(.top, 5)
-                    }
+                
+                switch viewModel.state {
+                    case .success(let rooms):
+                        WrappingHStack(0...rooms.count, id: \.self) { i in
+                            if i == rooms.count {
+                                RoomItem(icon: "add", title: nil, backgroundColor: Color.black) {
+                                    NewRoomView()
+                                }.padding(.top, 5)
+                            } else {
+                                RoomItem(icon: "living-room", title: rooms[i].name, backgroundColor: MyColors.grey.color.opacity(0.3)) {
+                                    RoomView(rooms[i])
+                                }.padding(.top, 5)
+                            }
+                        }
+                    
+                    case .loading:
+                        CircularLoader()
+                    
+                    
+                    case .failure(let message):
+                        Text(message)
                 }
+                
                 Spacer()
             }
             .frame(minWidth: 250)
