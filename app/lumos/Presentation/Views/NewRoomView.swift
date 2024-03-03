@@ -9,7 +9,6 @@ import SwiftUI
 import HomeKit
 
 struct NewRoomView: View {
-    @StateObject private var homeManager = HomeManager()
     @Environment(\.presentationMode) var presentationMode
     @State private var roomName: String = ""
     @State private var isShowingPopup = false
@@ -43,7 +42,7 @@ struct NewRoomView: View {
             }
             
             if isShowingPopup {
-                Popup(message: "Une erreur est survenue", buttonLabel: "Close") {
+                Popup(message: "An error has occurred", buttonLabel: "Close") {
                     isShowingPopup = false
                 }
             }
@@ -52,9 +51,9 @@ struct NewRoomView: View {
     
     private func _addNewRoom() {
         isLoading = true
-        homeManager.addNewRoom(roomName: roomName) { room, error in
+        HomeManager.Instance.addNewRoom(roomName: roomName) { room, error in
             if let error = error {
-                print(error)
+                print(error.localizedDescription)
                 isShowingPopup = true
             } else {
                 self.presentationMode.wrappedValue.dismiss()

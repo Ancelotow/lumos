@@ -11,30 +11,28 @@ import WrappingHStack
 
 
 struct HomeView: View {
-    @StateObject private var homeManager = HomeManager()
+    @ObservedObject private var viewModel = HomeViewModel()
     
     var body: some View {
         LumosBody {
             Title("Welcome back\non Lumos")
             
-            if let home = homeManager.home {
-                HStack {
-                    Spacer()
-                    WrappingHStack(0...home.rooms.count, id:\.self) { i in
-                        if i == home.rooms.count {
-                            RoomItem(icon: "add", title: nil, backgroundColor: Color.black) {
-                                NewRoomView()
-                            }.padding(.top, 5)
-                        } else {
-                            RoomItem(icon: "living-room", title: home.rooms[i].name, backgroundColor: MyColors.grey.color.opacity(0.3)) {
-                                Text("Living Room View")
-                            }.padding(.top, 5)
-                        }
+            HStack {
+                Spacer()
+                WrappingHStack(0...viewModel.rooms.count, id:\.self) { i in
+                    if i == viewModel.rooms.count {
+                        RoomItem(icon: "add", title: nil, backgroundColor: Color.black) {
+                            NewRoomView()
+                        }.padding(.top, 5)
+                    } else {
+                        RoomItem(icon: "living-room", title: viewModel.rooms[i].name, backgroundColor: MyColors.grey.color.opacity(0.3)) {
+                            RoomView(viewModel.rooms[i])
+                        }.padding(.top, 5)
                     }
-                    Spacer()
                 }
-                .frame(minWidth: 250)
+                Spacer()
             }
+            .frame(minWidth: 250)
             
             
             Text("Scenes")
@@ -42,6 +40,9 @@ struct HomeView: View {
                 .font(.system(size: 32))
                 .padding(.top, 10)
             
+        }
+        .onAppear {
+            viewModel.fetchRooms()
         }
     }
 }

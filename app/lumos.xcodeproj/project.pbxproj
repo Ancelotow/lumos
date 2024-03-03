@@ -24,6 +24,9 @@
 		A55D39C52B948FD60020B659 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D39C42B948FD60020B659 /* RoomView.swift */; };
 		A55D39C82B9490D30020B659 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D39C72B9490D30020B659 /* MyColors.swift */; };
 		A55D39CA2B9494380020B659 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D39C92B9494380020B659 /* Title.swift */; };
+		A55D39CC2B9497450020B659 /* MyTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D39CB2B9497450020B659 /* MyTextButton.swift */; };
+		A55D39CE2B94988B0020B659 /* PopupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D39CD2B94988B0020B659 /* PopupAction.swift */; };
+		A55D39D32B94A5A10020B659 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D39D22B94A5A10020B659 /* HomeViewModel.swift */; };
 		A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA812B8D2A3C000B315A /* LumosBody.swift */; };
 		A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA832B8D2EFC000B315A /* RoomItem.swift */; };
 		A5A7BA892B8D3F9A000B315A /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = A5A7BA882B8D3F9A000B315A /* WrappingHStack */; };
@@ -73,6 +76,9 @@
 		A55D39C42B948FD60020B659 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 		A55D39C72B9490D30020B659 /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 		A55D39C92B9494380020B659 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		A55D39CB2B9497450020B659 /* MyTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextButton.swift; sourceTree = "<group>"; };
+		A55D39CD2B94988B0020B659 /* PopupAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAction.swift; sourceTree = "<group>"; };
+		A55D39D22B94A5A10020B659 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A5A7BA812B8D2A3C000B315A /* LumosBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumosBody.swift; sourceTree = "<group>"; };
 		A5A7BA832B8D2EFC000B315A /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
 		A5FAC0022B8D15E00009F4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		A534FC6B2B8FA73D00DFAADB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A55D39D12B94A58C0020B659 /* ViewModel */,
 				A55D39C62B9490C60020B659 /* Themes */,
 				A5FAC0072B8D20D40009F4DB /* Views */,
 				A5A7BA802B8D2A22000B315A /* Components */,
@@ -184,6 +191,14 @@
 			path = Themes;
 			sourceTree = "<group>";
 		};
+		A55D39D12B94A58C0020B659 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A55D39D22B94A5A10020B659 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A5A7BA802B8D2A22000B315A /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +209,8 @@
 				A55D39C02B93A42A0020B659 /* CircularLoader.swift */,
 				A55D39C22B93A6820020B659 /* Popup.swift */,
 				A55D39C92B9494380020B659 /* Title.swift */,
+				A55D39CB2B9497450020B659 /* MyTextButton.swift */,
+				A55D39CD2B94988B0020B659 /* PopupAction.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -319,13 +336,16 @@
 				A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */,
 				A55D39C82B9490D30020B659 /* MyColors.swift in Sources */,
 				A534FC702B8FAA9E00DFAADB /* MyButton.swift in Sources */,
+				A55D39D32B94A5A10020B659 /* HomeViewModel.swift in Sources */,
 				A55D39C32B93A6820020B659 /* Popup.swift in Sources */,
 				A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */,
 				A54F31A52B718BDA0017600B /* HomeView.swift in Sources */,
 				A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */,
 				A55D39CA2B9494380020B659 /* Title.swift in Sources */,
 				A534FC6A2B8FA73600DFAADB /* NewRoomView.swift in Sources */,
+				A55D39CE2B94988B0020B659 /* PopupAction.swift in Sources */,
 				A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */,
+				A55D39CC2B9497450020B659 /* MyTextButton.swift in Sources */,
 				A55D39C52B948FD60020B659 /* RoomView.swift in Sources */,
 				A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */,
 				A55D39C12B93A42A0020B659 /* CircularLoader.swift in Sources */,
