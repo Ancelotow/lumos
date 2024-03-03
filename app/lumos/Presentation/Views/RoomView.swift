@@ -11,40 +11,90 @@ import SwiftUI
 import WrappingHStack
 
 struct RoomView: View {
-    private let _room: HMRoom
-    @StateObject private var homeManager = HomeManager.Instance
-    @State private var isDeleting = false
+    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject private var viewModel: RoomViewModel
+    @State private var showAlert = false
+    @State private var errorMessage = ""
+    @State private var alertType = TypeAlert.none
+    private let room: HMRoom
+    
     
     init(_ room: HMRoom) {
-        self._room = room
+        self.room = room
+        self.viewModel = RoomViewModel(room)
     }
     
     var body: some View {
-        ZStack {
-            LumosBody {
-                HStack {
-                    Title(_room.name)
-                    Spacer()
-                    MyTextButton(text: "Delete", callback: _confirmationToDelete)
-                }
+        LumosBody {
+            HStack {
+                Title(room.name)
+                Spacer()
+                MyTextButton(text: "Delete", callback: _confirmationToDelete)
+            }
+            
+            switch viewModel.state {
+                case .loading:
+                    CircularLoader()
                 
-                WrappingHStack(0..<_room.accessories.count, id:\.self) { i in
-                    Text("\(_room.accessories[i].name) => \(_room.accessories[i].category.description)")
-                }
+                case .success(let accessories):
+                    WrappingHStack(0..<accessories.count, id:\.self) { i in
+                        Text("\(accessories[i].name) => \(accessories[i].category.description)")
+                    }
+                
+                default:
+                    Spacer()
             }
         }
+        .alert(isPresented: $showAlert) {
+            switch alertType {
+                case .deleting:
+                    Alert(
+                        title: Text("Are you sure to delete the room \"\(room.name)\""),
+                        primaryButton: .default(Text("Cancel")) {
+                            alertType = .none
+                            showAlert = false
+                        },
+                        secondaryButton: .destructive(Text("Delete")) {
+                            viewModel.delete()
+                        }
+                    )
+                
+                default:
+                    Alert(title: Text(errorMessage))
+            }
+        }
+        .onReceive(viewModel.$stateDelete) { newState in
+            handleStateChange(newState)
+        }
+        
     }
     
     private func _confirmationToDelete() {
-        isDeleting = true
+        alertType = .deleting
+        showAlert = true
     }
     
-    private func _deleteRoom() {
-        isDeleting = false
-        print("Deleting")
+    private func handleStateChange(_ newState: RoomViewDeleteState) {
+        switch newState {
+            case .success:
+                alertType = .none
+                showAlert = false
+                self.presentationMode.wrappedValue.dismiss()
+            
+            case .failure(let error):
+                print("error")
+                alertType = .error
+                errorMessage = error
+                showAlert = true
+            
+            default:
+                break
+        }
     }
-    
-    private func _cancelDeletation() {
-        isDeleting = false
-    }
+}
+
+private enum TypeAlert {
+    case none
+    case error
+    case deleting
 }

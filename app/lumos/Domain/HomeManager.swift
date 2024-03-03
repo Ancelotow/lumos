@@ -33,7 +33,27 @@ class HomeManager: NSObject, ObservableObject, HMHomeManagerDelegate {
             print("You have no home")
             return
         }
-        home.addRoom(withName: roomName, completionHandler: callback)
+        home.addRoom(withName: roomName) { room, error in
+            if let error = error {
+                callback(nil, error)
+                return
+            }
+            callback(room, nil)
+        }
+    }
+    
+    func deleteRoom(room: HMRoom, callback: @escaping (Error?) -> Void) {
+        guard let home = self.home else {
+            print("You have no home")
+            return
+        }
+        home.removeRoom(room) { error in
+            guard let error = error else {
+                callback(nil)
+                return
+            }
+            callback(error)
+        }
     }
     
     func getRooms() -> [HMRoom] {

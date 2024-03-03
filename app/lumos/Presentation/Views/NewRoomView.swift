@@ -33,7 +33,7 @@ struct NewRoomView: View {
                     }
                 
                 default:
-                    MyButton(title: "Validate", callback: _addNewRoom)
+                    MyButton(title: "Validate", callback: addNewRoom)
                         .frame(maxWidth: .infinity, alignment: .center)
                 
             }
@@ -46,7 +46,7 @@ struct NewRoomView: View {
         }
     }
     
-    private func _addNewRoom() {
+    private func addNewRoom() {
         viewModel.addRoom(name: roomName)
     }
     
