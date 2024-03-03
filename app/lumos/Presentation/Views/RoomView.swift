@@ -37,8 +37,16 @@ struct RoomView: View {
                     CircularLoader()
                 
                 case .success(let accessories):
-                    WrappingHStack(0..<accessories.count, id:\.self) { i in
-                        Text("\(accessories[i].name) => \(accessories[i].category.description)")
+                    WrappingHStack(0...accessories.count, id:\.self) { i in
+                        if i == accessories.count {
+                            AccessoryItem(icon: "little-add", title: nil, backgroundColor: MyColors.black.color.opacity(0.8)) {
+                                NewRoomView()
+                            }.padding(.top, 5)
+                        } else {
+                            AccessoryItem(icon: IconHelper.getIcon(accessories[i]), title: accessories[i].name, backgroundColor: MyColors.grey.color.opacity(0.3)) {
+                                Text(accessories[i].name)
+                            }.padding(.top, 5)
+                        }
                     }
                 
                 default:

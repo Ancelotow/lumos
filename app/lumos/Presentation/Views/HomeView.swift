@@ -26,7 +26,7 @@ struct HomeView: View {
                     case .success(let rooms):
                         WrappingHStack(0...rooms.count, id: \.self) { i in
                             if i == rooms.count {
-                                RoomItem(icon: "add", title: nil, backgroundColor: Color.black) {
+                                RoomItem(icon: "add", title: nil, backgroundColor: MyColors.black.color.opacity(0.8)) {
                                     NewRoomView()
                                 }.padding(.top, 5)
                             } else {

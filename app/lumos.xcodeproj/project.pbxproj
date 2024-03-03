@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A52AD9A62B951B60005D0CC3 /* RoomViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9A52B951B60005D0CC3 /* RoomViewState.swift */; };
 		A52AD9A82B951BAF005D0CC3 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9A72B951BAF005D0CC3 /* RoomViewModel.swift */; };
+		A52AD9AA2B952673005D0CC3 /* AccessoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */; };
+		A52AD9AC2B952AA7005D0CC3 /* IconHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9AB2B952AA7005D0CC3 /* IconHelper.swift */; };
 		A534FC6A2B8FA73600DFAADB /* NewRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC692B8FA73600DFAADB /* NewRoomView.swift */; };
 		A534FC702B8FAA9E00DFAADB /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */; };
 		A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC712B8FACB800DFAADB /* TextInput.swift */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		A52AD9A52B951B60005D0CC3 /* RoomViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewState.swift; sourceTree = "<group>"; };
 		A52AD9A72B951BAF005D0CC3 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
+		A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryItem.swift; sourceTree = "<group>"; };
+		A52AD9AB2B952AA7005D0CC3 /* IconHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconHelper.swift; sourceTree = "<group>"; };
 		A534FC692B8FA73600DFAADB /* NewRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomView.swift; sourceTree = "<group>"; };
 		A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		A534FC712B8FACB800DFAADB /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A55D39C72B9490D30020B659 /* MyColors.swift */,
+				A52AD9AB2B952AA7005D0CC3 /* IconHelper.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				A55D39C02B93A42A0020B659 /* CircularLoader.swift */,
 				A55D39C92B9494380020B659 /* Title.swift */,
 				A55D39CB2B9497450020B659 /* MyTextButton.swift */,
+				A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */,
+				A52AD9AA2B952673005D0CC3 /* AccessoryItem.swift in Sources */,
 				A55D39C82B9490D30020B659 /* MyColors.swift in Sources */,
 				A55D39DD2B9504CD0020B659 /* HomeViewState.swift in Sources */,
 				A55D39E22B950E7E0020B659 /* NewRoomViewModel.swift in Sources */,
@@ -378,6 +385,7 @@
 				A55D39E02B950E540020B659 /* NewRoomViewState.swift in Sources */,
 				A55D39CA2B9494380020B659 /* Title.swift in Sources */,
 				A534FC6A2B8FA73600DFAADB /* NewRoomView.swift in Sources */,
+				A52AD9AC2B952AA7005D0CC3 /* IconHelper.swift in Sources */,
 				A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */,
 				A55D39CC2B9497450020B659 /* MyTextButton.swift in Sources */,
 				A55D39C52B948FD60020B659 /* RoomView.swift in Sources */,
