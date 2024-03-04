@@ -42,5 +42,17 @@ struct LightItem: View {
         .padding(.all, 15)
         .background(isOn ? MyColors.accent.color : MyColors.darkgrey.color.opacity(0.3))
         .cornerRadius(20)
+        .onTapGesture {
+            isOn.toggle()
+            if let service = lightbulb.services.first(where: { $0.serviceType == HMServiceTypeLightbulb }) {
+                if let powerState = service.characteristics.first(where: { $0.characteristicType == HMCharacteristicTypePowerState }) {
+                    powerState.writeValue(isOn) { error in
+                        if let error = error {
+                            print(error)
+                        }
+                    }
+                }
+           }
+        }
     }
 }
