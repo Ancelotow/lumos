@@ -11,6 +11,7 @@
 		A52AD9A82B951BAF005D0CC3 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9A72B951BAF005D0CC3 /* RoomViewModel.swift */; };
 		A52AD9AA2B952673005D0CC3 /* AccessoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */; };
 		A52AD9AC2B952AA7005D0CC3 /* IconHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9AB2B952AA7005D0CC3 /* IconHelper.swift */; };
+		A52AD9AE2B96611B005D0CC3 /* LightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9AD2B96611B005D0CC3 /* LightItem.swift */; };
 		A534FC6A2B8FA73600DFAADB /* NewRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC692B8FA73600DFAADB /* NewRoomView.swift */; };
 		A534FC702B8FAA9E00DFAADB /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */; };
 		A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC712B8FACB800DFAADB /* TextInput.swift */; };
@@ -67,6 +68,7 @@
 		A52AD9A72B951BAF005D0CC3 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
 		A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryItem.swift; sourceTree = "<group>"; };
 		A52AD9AB2B952AA7005D0CC3 /* IconHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconHelper.swift; sourceTree = "<group>"; };
+		A52AD9AD2B96611B005D0CC3 /* LightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightItem.swift; sourceTree = "<group>"; };
 		A534FC692B8FA73600DFAADB /* NewRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomView.swift; sourceTree = "<group>"; };
 		A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		A534FC712B8FACB800DFAADB /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				A55D39C92B9494380020B659 /* Title.swift */,
 				A55D39CB2B9497450020B659 /* MyTextButton.swift */,
 				A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */,
+				A52AD9AD2B96611B005D0CC3 /* LightItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */,
 				A55D39CC2B9497450020B659 /* MyTextButton.swift in Sources */,
 				A55D39C52B948FD60020B659 /* RoomView.swift in Sources */,
+				A52AD9AE2B96611B005D0CC3 /* LightItem.swift in Sources */,
 				A52AD9A62B951B60005D0CC3 /* RoomViewState.swift in Sources */,
 				A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */,
 				A55D39C12B93A42A0020B659 /* CircularLoader.swift in Sources */,
