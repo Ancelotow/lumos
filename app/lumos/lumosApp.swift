@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import HomeKit
 
 @main
 struct lumosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                HomeView()
+            }
         }
     }
 }
