@@ -36,6 +36,7 @@
 		A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA812B8D2A3C000B315A /* LumosBody.swift */; };
 		A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA832B8D2EFC000B315A /* RoomItem.swift */; };
 		A5A7BA892B8D3F9A000B315A /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = A5A7BA882B8D3F9A000B315A /* WrappingHStack */; };
+		A5ED7BD12B977C7B00EDF294 /* MotionDetectorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED7BD02B977C7B00EDF294 /* MotionDetectorItem.swift */; };
 		A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		A55D39E12B950E7E0020B659 /* NewRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomViewModel.swift; sourceTree = "<group>"; };
 		A5A7BA812B8D2A3C000B315A /* LumosBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumosBody.swift; sourceTree = "<group>"; };
 		A5A7BA832B8D2EFC000B315A /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
+		A5ED7BD02B977C7B00EDF294 /* MotionDetectorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetectorItem.swift; sourceTree = "<group>"; };
 		A5FAC0022B8D15E00009F4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A5FAC0042B8D1CA50009F4DB /* lumos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lumos.entitlements; sourceTree = "<group>"; };
 		A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				A55D39CB2B9497450020B659 /* MyTextButton.swift */,
 				A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */,
 				A52AD9AD2B96611B005D0CC3 /* LightItem.swift */,
+				A5ED7BD02B977C7B00EDF294 /* MotionDetectorItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				A52AD9AE2B96611B005D0CC3 /* LightItem.swift in Sources */,
 				A52AD9A62B951B60005D0CC3 /* RoomViewState.swift in Sources */,
 				A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */,
+				A5ED7BD12B977C7B00EDF294 /* MotionDetectorItem.swift in Sources */,
 				A55D39C12B93A42A0020B659 /* CircularLoader.swift in Sources */,
 				A52AD9A82B951BAF005D0CC3 /* RoomViewModel.swift in Sources */,
 			);

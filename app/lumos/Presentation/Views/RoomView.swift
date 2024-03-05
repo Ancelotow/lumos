@@ -52,6 +52,8 @@ struct RoomView: View {
                     WrappingHStack(0..<accessories.count, id:\.self) { i in
                         if accessories[i].category.categoryType == HMAccessoryCategoryTypeLightbulb {
                             LightItem(accessories[i]).padding(.top, 5)
+                        } else if accessories[i].category.categoryType == HMAccessoryCategoryTypeSensor {
+                            MotionDetectorItem(accessories[i]).padding(.top, 5)
                         }
                     }
                 
