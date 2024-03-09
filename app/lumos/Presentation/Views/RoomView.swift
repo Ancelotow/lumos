@@ -18,7 +18,6 @@ struct RoomView: View {
     @State private var alertType = TypeAlert.none
     private let room: HMRoom
     
-    
     init(_ room: HMRoom) {
         self.room = room
         self.viewModel = RoomViewModel(room)
@@ -40,7 +39,7 @@ struct RoomView: View {
                     WrappingHStack(0...accessories.count, id:\.self) { i in
                         if i == accessories.count {
                             AccessoryItem(icon: "little-add", title: nil, backgroundColor: MyColors.black.color.opacity(0.8)) {
-                                NewRoomView()
+                                NewAccessoryView(room)
                             }.padding(.top, 5)
                         } else {
                             AccessoryItem(icon: IconHelper.getIcon(accessories[i]), title: accessories[i].name, backgroundColor: MyColors.grey.color.opacity(0.3)) {
@@ -49,13 +48,13 @@ struct RoomView: View {
                         }
                     }
                 
-                    WrappingHStack(0..<accessories.count, id:\.self) { i in
-                        if accessories[i].category.categoryType == HMAccessoryCategoryTypeLightbulb {
-                            LightItem(accessories[i]).padding(.top, 5)
-                        } else if accessories[i].category.categoryType == HMAccessoryCategoryTypeSensor {
-                            MotionDetectorItem(accessories[i]).padding(.top, 5)
-                        }
+                WrappingHStack(0..<accessories.count, id:\.self) { i in
+                    if accessories[i].category.categoryType == HMAccessoryCategoryTypeLightbulb {
+                        LightView(accessories[i]).padding(.top, 5).frame(alignment: .top)
+                    } else if accessories[i].category.categoryType == HMAccessoryCategoryTypeSensor {
+                        MotionDetectorView(accessories[i]).padding(.top, 5)
                     }
+                }
                 
                 default:
                     Spacer()
@@ -82,7 +81,9 @@ struct RoomView: View {
         .onReceive(viewModel.$stateDelete) { newState in
             handleStateChange(newState)
         }
-        
+        .onAppear {
+            viewModel.fetchAccessories()
+        }
     }
     
     private func _confirmationToDelete() {

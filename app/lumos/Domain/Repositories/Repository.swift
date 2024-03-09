@@ -1,0 +1,10 @@
+//
+//  Repository.swift
+//  lumos
+//
+//  Created by Owen Ancelot on 09/03/2024.
+//
+
+import Foundation
+
+protocol Repository { }

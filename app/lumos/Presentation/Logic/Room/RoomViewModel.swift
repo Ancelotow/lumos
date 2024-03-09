@@ -34,8 +34,21 @@ class RoomViewModel: ObservableObject {
     private func _bind() {
         cancellable = homeManager.$home
             .map { $0!.rooms.first(where: { $0.uniqueIdentifier == self.room.uniqueIdentifier }) }
-            .map { RoomViewState.success(accessories: $0?.accessories ?? [])  }
+            .map { $0?.accessories ?? [] }
+            .map { accessories in
+                let filterAccs = accessories.filter { $0.isAvailableForApp() }
+                let sortedAccs = filterAccs.sorted { $0.sortByCategory($1) }
+                return RoomViewState.success(accessories: sortedAccs)
+            }
             .assign(to: \.state, on: self)
+    }
+    
+    func fetchAccessories() {
+        let accessories = homeManager.getAccessories(room: room)
+            .filter { $0.isAvailableForApp() }
+            .sorted { $0.sortByCategory($1) }
+        
+        state = .success(accessories: accessories)
     }
 
     func delete() {
@@ -45,7 +58,6 @@ class RoomViewModel: ObservableObject {
                 self.stateDelete = .failure(message: error.localizedDescription)
                 return
             }
-            
             self.stateDelete = .success
         }
     }

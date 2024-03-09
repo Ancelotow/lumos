@@ -63,6 +63,35 @@ class HomeManager: NSObject, ObservableObject, HMHomeManagerDelegate {
         }
         return home.rooms
     }
+    
+    func getAccessories(room: HMRoom) -> [HMAccessory] {
+        guard let home = self.home else {
+            print("You have no home")
+            return []
+        }
+        let accessories = home.rooms.first { $0.uniqueIdentifier == room.uniqueIdentifier }?.accessories ?? []
+        return accessories
+    }
+    
+    func addAccessory(name: String, room: HMRoom, callback: @escaping (Error?) -> Void) {
+        guard let home = self.home else {
+            print("You have no home")
+            return
+        }
+        let setup = HMAccessorySetupManager()
+        let request = HMAccessorySetupRequest()
+        request.homeUniqueIdentifier = home.uniqueIdentifier
+        request.suggestedAccessoryName = name
+        request.suggestedRoomUniqueIdentifier = room.uniqueIdentifier
+        setup.performAccessorySetup(using: request) { result, error in
+            print("eeee")
+            guard error == nil else {
+                print(error.debugDescription)
+                return
+            }
+            callback(error)
+        }
+    }
 
     func homeManagerDidUpdateHomes(_ manager: HMHomeManager) {
         self.home = _manager.homes.first
