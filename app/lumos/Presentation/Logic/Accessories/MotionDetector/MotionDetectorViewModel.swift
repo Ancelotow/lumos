@@ -12,9 +12,11 @@ class MotionDetectorViewModel: ObservableObject {
     @Published var isMotionDetected: Bool = false
     public let motionDetector: HMAccessory
     private var cancellables: Set<AnyCancellable> = []
+    private let historyRepository: HistoryRepository
     
-    init(motionDetector: HMAccessory) {
+    init(motionDetector: HMAccessory, historyRepository: HistoryRepository = HistoryLocalRepository()) {
         self.motionDetector = motionDetector
+        self.historyRepository = historyRepository
         if let service = motionDetector.services.first(where: { $0.serviceType == HMServiceTypeMotionSensor }) {
             _bind(service: service)
         }
@@ -40,6 +42,18 @@ class MotionDetectorViewModel: ObservableObject {
         if characteristic.characteristicType == HMCharacteristicTypeMotionDetected {
             DispatchQueue.main.async {
                 self.isMotionDetected = characteristic.value as? Bool ?? false
+                var historyType = self.isMotionDetected ? HistoryType.intrusion : HistoryType.none
+                var history = History(
+                    type: historyType,
+                    date: Date.now,
+                    accessoryIdentifier: self.motionDetector.uniqueIdentifier
+                )
+                self.historyRepository.addHistory(history: history) { error in
+                    guard error == nil else {
+                        print(error?.localizedDescription)
+                        return
+                    }
+                }
             }
         }
     }

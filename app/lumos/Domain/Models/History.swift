@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct History: Codable {
+struct History: Codable, Identifiable, Hashable {
+    let id = UUID()
     let type: HistoryType
     let date: Date
     let accessoryIdentifier: UUID
@@ -22,5 +23,27 @@ struct History: Codable {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         return try decoder.decode(History.self, from: jsonData)
+    }
+    
+    func formattedTime() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: date)
+    }
+    
+    func formattedDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy"
+        return dateFormatter.string(from: date)
+    }
+    
+    func formattedType() -> String {
+        switch self.type {
+            case .intrusion:
+                return "Enter"
+            
+            default:
+                return "Exit"
+        }
     }
 }

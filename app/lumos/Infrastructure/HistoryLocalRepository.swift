@@ -15,10 +15,10 @@ class HistoryLocalRepository : HistoryRepository {
     
     func getHistories(accessoryIdentifier: UUID, completion: @escaping ([History], Error?) -> Void) -> Void {
         do {
-            var histories = try _getHistories()
-            var results = histories
+            let histories = try _getHistories()
+            let results = histories
                 .filter { $0.accessoryIdentifier == accessoryIdentifier }
-                .sorted { $0.date < $1.date }
+                .sorted { $0.date > $1.date }
             completion(results, nil)
         } catch {
             completion([], error)
@@ -28,6 +28,17 @@ class HistoryLocalRepository : HistoryRepository {
     func addHistory(history: History, completion: @escaping (Error?) -> Void) {
         do {
             var histories = try _getHistories()
+            let results = histories
+                .filter { $0.accessoryIdentifier == history.accessoryIdentifier }
+                .sorted { $0.date > $1.date }
+            guard let lastHistory = results.first else {
+                completion(nil)
+                return
+            }
+            guard lastHistory.type != history.type else {
+                completion(nil)
+                return
+            }
             histories.append(history)
             let encoder = JSONEncoder()
             encoder.dateEncodingStrategy = .iso8601
@@ -41,6 +52,13 @@ class HistoryLocalRepository : HistoryRepository {
         } catch {
             completion(error)
         }
+    }
+    
+    private func calculateIntervalInMinutes(from startDate: Date, to endDate: Date) -> Double {
+        let intervalInSeconds = endDate.timeIntervalSince(startDate)
+        let intervalInMinutes = intervalInSeconds / 60.0
+        print(intervalInMinutes)
+        return intervalInMinutes
     }
 
     private func _getHistories() throws -> [History] {

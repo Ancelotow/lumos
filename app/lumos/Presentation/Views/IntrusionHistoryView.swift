@@ -19,8 +19,7 @@ struct IntrusionHistoryView: View {
     
     var body: some View {
         LumosBody {
-            Title(viewModel.accessory.room?.name ?? "Room")
-            Title(viewModel.accessory.name)
+            Title("\(viewModel.accessory.room?.name ?? "Room") / \(viewModel.accessory.name)")
             
             Text("History")
                 .foregroundColor(MyColors.white.color)
@@ -36,7 +35,7 @@ struct IntrusionHistoryView: View {
                         if histories.isEmpty {
                             Text("No history for this accessory")
                         } else {
-                            Spacer()
+                            HistoryList(histories)
                         }
                     
                     case .loading:
