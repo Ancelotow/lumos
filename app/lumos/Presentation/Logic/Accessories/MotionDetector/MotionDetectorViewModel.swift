@@ -1,5 +1,5 @@
 //
-//  NewAccessoryViewModel.swift
+//  MotionDetectorViewModel.swift
 //  lumos
 //
 //  Created by Owen Ancelot on 09/03/2024.

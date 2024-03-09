@@ -1,5 +1,5 @@
 //
-//  NewAccessoryViewModel.swift
+//  LightBulbViewModel.swift
 //  lumos
 //
 //  Created by Owen Ancelot on 09/03/2024.

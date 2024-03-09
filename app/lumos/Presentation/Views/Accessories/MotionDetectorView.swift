@@ -32,6 +32,7 @@ struct MotionDetectorItem: View {
                 .foregroundColor(MyColors.white.color)
                 .font(.system(size: 13))
                 .padding(5)
+                .multilineTextAlignment(.center)
         }
         .frame(width: 150, height: 150)
         .padding(.all, 15)
