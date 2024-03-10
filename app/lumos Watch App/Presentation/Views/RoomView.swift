@@ -52,6 +52,7 @@ struct RoomView: View {
                     Spacer()
             }
         }
+        .navigationBarTitle(room.name)
         .onAppear {
             viewModel.fetchAccessories()
         }

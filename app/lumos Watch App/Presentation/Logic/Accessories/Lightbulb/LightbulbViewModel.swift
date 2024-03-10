@@ -28,7 +28,6 @@ class LightBulbViewModel: ObservableObject {
                     print("Error enabling notification for power state: \(error!)")
                     return
                 }
-
                 characteristic.publisher(for: \.value)
                     .compactMap { $0 as? Bool }
                     .sink { [weak self] newValue in
@@ -44,7 +43,6 @@ class LightBulbViewModel: ObservableObject {
                     print("Error enabling notification for brightness: \(error!)")
                     return
                 }
-
                 charBrightness.publisher(for: \.value)
                     .compactMap { $0 as? Int }
                     .sink { [weak self] newValue in
