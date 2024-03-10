@@ -18,7 +18,7 @@ struct RoomItem: View {
     
     var body: some View {
         NavigationLink(
-            destination: Text(room.name),
+            destination: RoomView(self.room),
             label: {
                 HStack{
                     Image("room")
