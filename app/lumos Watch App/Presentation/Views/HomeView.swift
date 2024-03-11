@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  lumos Watch App
 //
-//  Created by Owen Ancelot on 10/03/2024.
+//  Created by Mikail Yilmaz on 10/03/2024.
 //
 
 import SwiftUI
