@@ -2,7 +2,7 @@
 //  CircularLoader.swift
 //  lumos
 //
-//  Created by Owen Ancelot on 02/03/2024.
+//  Created by Manon Salsou on 02/03/2024.
 //
 
 import Foundation

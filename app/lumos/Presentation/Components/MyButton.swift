@@ -2,7 +2,7 @@
 //  MyButton.swift
 //  lumos
 //
-//  Created by Owen Ancelot on 28/02/2024.
+//  Created by Manon Salsou on 28/02/2024.
 //
 
 import SwiftUI

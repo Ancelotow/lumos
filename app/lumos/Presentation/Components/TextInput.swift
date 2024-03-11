@@ -2,7 +2,7 @@
 //  TextInput.swift
 //  lumos
 //
-//  Created by Owen Ancelot on 28/02/2024.
+//  Created by Manon Salsou on 28/02/2024.
 //
 
 import Foundation
@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TextInput: View {
     var title: String
+    // Observable
     var value: Binding<String>
     
     init(title: String, value: Binding<String>) {
