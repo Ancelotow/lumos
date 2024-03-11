@@ -9,7 +9,6 @@ import SwiftUI
 import HomeKit
 import WrappingHStack
 
-
 struct HomeView: View {
     @ObservedObject private var viewModel = HomeViewModel()
     @State private var showingAlert = true
