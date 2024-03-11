@@ -9,7 +9,9 @@ import SwiftUI
 import HomeKit
 
 struct NewRoomView: View {
+    // Control the application, can come-back
     @Environment(\.presentationMode) var presentationMode
+    // Class not event
     @ObservedObject private var viewModel = NewRoomViewModel()
     @State private var roomName = ""
     @State private var isShowingError = false
