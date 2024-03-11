@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct lumos_Watch_AppApp: App {
+    var inst = HomeManager.Instance
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                HomeView()
+            }
         }
     }
 }

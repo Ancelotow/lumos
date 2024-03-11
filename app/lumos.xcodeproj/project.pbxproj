@@ -11,17 +11,45 @@
 		A52AD9A82B951BAF005D0CC3 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9A72B951BAF005D0CC3 /* RoomViewModel.swift */; };
 		A52AD9AA2B952673005D0CC3 /* AccessoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */; };
 		A52AD9AC2B952AA7005D0CC3 /* IconHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9AB2B952AA7005D0CC3 /* IconHelper.swift */; };
-		A52AD9AE2B96611B005D0CC3 /* LightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9AD2B96611B005D0CC3 /* LightItem.swift */; };
+		A52AD9AE2B96611B005D0CC3 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AD9AD2B96611B005D0CC3 /* LightView.swift */; };
 		A534FC6A2B8FA73600DFAADB /* NewRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC692B8FA73600DFAADB /* NewRoomView.swift */; };
 		A534FC702B8FAA9E00DFAADB /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */; };
 		A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534FC712B8FACB800DFAADB /* TextInput.swift */; };
+		A53F71DB2B9C8212004CC210 /* NewAccessoryViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71DA2B9C8212004CC210 /* NewAccessoryViewState.swift */; };
+		A53F71DD2B9C821E004CC210 /* NewAccessoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71DC2B9C821E004CC210 /* NewAccessoryViewModel.swift */; };
+		A53F71DF2B9C8599004CC210 /* NewAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71DE2B9C8599004CC210 /* NewAccessoryView.swift */; };
+		A53F71E42B9C8CDA004CC210 /* MotionDetectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71E32B9C8CDA004CC210 /* MotionDetectorViewModel.swift */; };
+		A53F71E72B9C97AA004CC210 /* LightBulbViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71E62B9C97AA004CC210 /* LightBulbViewModel.swift */; };
+		A53F71E92B9CCB6F004CC210 /* HistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71E82B9CCB6F004CC210 /* HistoryRepository.swift */; };
+		A53F71ED2B9CCC9F004CC210 /* HistoryLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71EC2B9CCC9F004CC210 /* HistoryLocalRepository.swift */; };
+		A53F71F22B9CCCEA004CC210 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71F12B9CCCEA004CC210 /* History.swift */; };
+		A53F71F42B9CCD0C004CC210 /* HistoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71F32B9CCD0C004CC210 /* HistoryType.swift */; };
+		A53F71F82B9CD1DA004CC210 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71F72B9CD1DA004CC210 /* CustomError.swift */; };
+		A53F72002B9CD523004CC210 /* IntrusionHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F71FF2B9CD523004CC210 /* IntrusionHistoryViewModel.swift */; };
+		A53F72022B9CD6BB004CC210 /* IntrusionHistoryViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72012B9CD6BB004CC210 /* IntrusionHistoryViewState.swift */; };
+		A53F72042B9CD83F004CC210 /* IntrusionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72032B9CD83F004CC210 /* IntrusionHistoryView.swift */; };
+		A53F72062B9CE54F004CC210 /* HistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72052B9CE54F004CC210 /* HistoryList.swift */; };
+		A53F720F2B9D2FF9004CC210 /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F720E2B9D2FF9004CC210 /* RoomItem.swift */; };
+		A53F72122B9D309F004CC210 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72112B9D309F004CC210 /* MyColors.swift */; };
+		A53F72162B9D3125004CC210 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72152B9D3125004CC210 /* HomeManager.swift */; };
+		A53F72192B9D3176004CC210 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72182B9D3176004CC210 /* HomeViewModel.swift */; };
+		A53F721B2B9D3182004CC210 /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F721A2B9D3182004CC210 /* HomeViewState.swift */; };
+		A53F721D2B9D31AF004CC210 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F721C2B9D31AF004CC210 /* HomeView.swift */; };
+		A53F72202B9D3213004CC210 /* CircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F721F2B9D3213004CC210 /* CircularLoader.swift */; };
+		A53F722B2B9D38AE004CC210 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F722A2B9D38AE004CC210 /* RoomView.swift */; };
+		A53F722E2B9D38CB004CC210 /* RoomViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F722D2B9D38CB004CC210 /* RoomViewState.swift */; };
+		A53F72312B9D38E0004CC210 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72302B9D38E0004CC210 /* RoomViewModel.swift */; };
+		A53F72342B9D3922004CC210 /* HMAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72332B9D3922004CC210 /* HMAccessory.swift */; };
+		A53F723A2B9D3A25004CC210 /* LightbulbViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72392B9D3A25004CC210 /* LightbulbViewModel.swift */; };
+		A53F723D2B9D3A54004CC210 /* MotionDetectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F723C2B9D3A54004CC210 /* MotionDetectorViewModel.swift */; };
+		A53F723F2B9D3AA0004CC210 /* LightbulbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F723E2B9D3AA0004CC210 /* LightbulbView.swift */; };
+		A53F72412B9D41A2004CC210 /* MotionDetectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F72402B9D41A2004CC210 /* MotionDetectorView.swift */; };
 		A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31A22B718BDA0017600B /* lumosApp.swift */; };
 		A54F31A52B718BDA0017600B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31A42B718BDA0017600B /* HomeView.swift */; };
 		A54F31A72B718BDC0017600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31A62B718BDC0017600B /* Assets.xcassets */; };
 		A54F31AA2B718BDC0017600B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31A92B718BDC0017600B /* Preview Assets.xcassets */; };
 		A54F31C62B718BDC0017600B /* lumos Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A54F31C52B718BDC0017600B /* lumos Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A54F31CB2B718BDC0017600B /* lumosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31CA2B718BDC0017600B /* lumosApp.swift */; };
-		A54F31CD2B718BDC0017600B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F31CC2B718BDC0017600B /* ContentView.swift */; };
 		A54F31CF2B718BDD0017600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31CE2B718BDD0017600B /* Assets.xcassets */; };
 		A54F31D22B718BDD0017600B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54F31D12B718BDD0017600B /* Preview Assets.xcassets */; };
 		A55D39C12B93A42A0020B659 /* CircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D39C02B93A42A0020B659 /* CircularLoader.swift */; };
@@ -36,7 +64,8 @@
 		A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA812B8D2A3C000B315A /* LumosBody.swift */; };
 		A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7BA832B8D2EFC000B315A /* RoomItem.swift */; };
 		A5A7BA892B8D3F9A000B315A /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = A5A7BA882B8D3F9A000B315A /* WrappingHStack */; };
-		A5ED7BD12B977C7B00EDF294 /* MotionDetectorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED7BD02B977C7B00EDF294 /* MotionDetectorItem.swift */; };
+		A5ED7BD12B977C7B00EDF294 /* MotionDetectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED7BD02B977C7B00EDF294 /* MotionDetectorView.swift */; };
+		A5ED7BD42B9A347500EDF294 /* HMAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED7BD32B9A347500EDF294 /* HMAccessory.swift */; };
 		A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +98,41 @@
 		A52AD9A72B951BAF005D0CC3 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
 		A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryItem.swift; sourceTree = "<group>"; };
 		A52AD9AB2B952AA7005D0CC3 /* IconHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconHelper.swift; sourceTree = "<group>"; };
-		A52AD9AD2B96611B005D0CC3 /* LightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightItem.swift; sourceTree = "<group>"; };
+		A52AD9AD2B96611B005D0CC3 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
 		A534FC692B8FA73600DFAADB /* NewRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomView.swift; sourceTree = "<group>"; };
 		A534FC6F2B8FAA9E00DFAADB /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		A534FC712B8FACB800DFAADB /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		A53F71DA2B9C8212004CC210 /* NewAccessoryViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccessoryViewState.swift; sourceTree = "<group>"; };
+		A53F71DC2B9C821E004CC210 /* NewAccessoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccessoryViewModel.swift; sourceTree = "<group>"; };
+		A53F71DE2B9C8599004CC210 /* NewAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccessoryView.swift; sourceTree = "<group>"; };
+		A53F71E32B9C8CDA004CC210 /* MotionDetectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetectorViewModel.swift; sourceTree = "<group>"; };
+		A53F71E62B9C97AA004CC210 /* LightBulbViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBulbViewModel.swift; sourceTree = "<group>"; };
+		A53F71E82B9CCB6F004CC210 /* HistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRepository.swift; sourceTree = "<group>"; };
+		A53F71EC2B9CCC9F004CC210 /* HistoryLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLocalRepository.swift; sourceTree = "<group>"; };
+		A53F71F12B9CCCEA004CC210 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		A53F71F32B9CCD0C004CC210 /* HistoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryType.swift; sourceTree = "<group>"; };
+		A53F71F72B9CD1DA004CC210 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		A53F71FF2B9CD523004CC210 /* IntrusionHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrusionHistoryViewModel.swift; sourceTree = "<group>"; };
+		A53F72012B9CD6BB004CC210 /* IntrusionHistoryViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrusionHistoryViewState.swift; sourceTree = "<group>"; };
+		A53F72032B9CD83F004CC210 /* IntrusionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrusionHistoryView.swift; sourceTree = "<group>"; };
+		A53F72052B9CE54F004CC210 /* HistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryList.swift; sourceTree = "<group>"; };
+		A53F720D2B9D2DB3004CC210 /* lumos-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "lumos-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A53F720E2B9D2FF9004CC210 /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
+		A53F72112B9D309F004CC210 /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
+		A53F72152B9D3125004CC210 /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		A53F72182B9D3176004CC210 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A53F721A2B9D3182004CC210 /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
+		A53F721C2B9D31AF004CC210 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A53F721F2B9D3213004CC210 /* CircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoader.swift; sourceTree = "<group>"; };
+		A53F72212B9D33AD004CC210 /* lumos Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "lumos Watch App.entitlements"; sourceTree = "<group>"; };
+		A53F722A2B9D38AE004CC210 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		A53F722D2B9D38CB004CC210 /* RoomViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewState.swift; sourceTree = "<group>"; };
+		A53F72302B9D38E0004CC210 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
+		A53F72332B9D3922004CC210 /* HMAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAccessory.swift; sourceTree = "<group>"; };
+		A53F72392B9D3A25004CC210 /* LightbulbViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbViewModel.swift; sourceTree = "<group>"; };
+		A53F723C2B9D3A54004CC210 /* MotionDetectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetectorViewModel.swift; sourceTree = "<group>"; };
+		A53F723E2B9D3AA0004CC210 /* LightbulbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbView.swift; sourceTree = "<group>"; };
+		A53F72402B9D41A2004CC210 /* MotionDetectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetectorView.swift; sourceTree = "<group>"; };
 		A54F319F2B718BDA0017600B /* lumos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lumos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54F31A22B718BDA0017600B /* lumosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosApp.swift; sourceTree = "<group>"; };
 		A54F31A42B718BDA0017600B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -80,7 +140,6 @@
 		A54F31A92B718BDC0017600B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A54F31C52B718BDC0017600B /* lumos Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lumos Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54F31CA2B718BDC0017600B /* lumosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumosApp.swift; sourceTree = "<group>"; };
-		A54F31CC2B718BDC0017600B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A54F31CE2B718BDD0017600B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54F31D12B718BDD0017600B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A55D39C02B93A42A0020B659 /* CircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoader.swift; sourceTree = "<group>"; };
@@ -94,7 +153,8 @@
 		A55D39E12B950E7E0020B659 /* NewRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomViewModel.swift; sourceTree = "<group>"; };
 		A5A7BA812B8D2A3C000B315A /* LumosBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumosBody.swift; sourceTree = "<group>"; };
 		A5A7BA832B8D2EFC000B315A /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
-		A5ED7BD02B977C7B00EDF294 /* MotionDetectorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetectorItem.swift; sourceTree = "<group>"; };
+		A5ED7BD02B977C7B00EDF294 /* MotionDetectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetectorView.swift; sourceTree = "<group>"; };
+		A5ED7BD32B9A347500EDF294 /* HMAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAccessory.swift; sourceTree = "<group>"; };
 		A5FAC0022B8D15E00009F4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A5FAC0042B8D1CA50009F4DB /* lumos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lumos.entitlements; sourceTree = "<group>"; };
 		A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
@@ -142,9 +202,229 @@
 		A534FC6C2B8FA75400DFAADB /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A53F71F62B9CD1C2004CC210 /* Exceptions */,
+				A53F71F52B9CCDC7004CC210 /* Repositories */,
+				A53F71F02B9CCCDB004CC210 /* Models */,
+				A5ED7BD22B9A344200EDF294 /* Extensions */,
 				A5FAC0052B8D1FDC0009F4DB /* HomeManager.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		A53F71D92B9C81FB004CC210 /* NewAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71DA2B9C8212004CC210 /* NewAccessoryViewState.swift */,
+				A53F71DC2B9C821E004CC210 /* NewAccessoryViewModel.swift */,
+			);
+			path = NewAccessory;
+			sourceTree = "<group>";
+		};
+		A53F71E02B9C8CB7004CC210 /* Accessories */ = {
+			isa = PBXGroup;
+			children = (
+				A52AD9AD2B96611B005D0CC3 /* LightView.swift */,
+				A5ED7BD02B977C7B00EDF294 /* MotionDetectorView.swift */,
+			);
+			path = Accessories;
+			sourceTree = "<group>";
+		};
+		A53F71E12B9C8CC3004CC210 /* Accessories */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71E52B9C9796004CC210 /* LIghtbulb */,
+				A53F71E22B9C8CC7004CC210 /* MotionDetector */,
+			);
+			path = Accessories;
+			sourceTree = "<group>";
+		};
+		A53F71E22B9C8CC7004CC210 /* MotionDetector */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71E32B9C8CDA004CC210 /* MotionDetectorViewModel.swift */,
+			);
+			path = MotionDetector;
+			sourceTree = "<group>";
+		};
+		A53F71E52B9C9796004CC210 /* LIghtbulb */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71E62B9C97AA004CC210 /* LightBulbViewModel.swift */,
+			);
+			path = LIghtbulb;
+			sourceTree = "<group>";
+		};
+		A53F71EB2B9CCC8F004CC210 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71EC2B9CCC9F004CC210 /* HistoryLocalRepository.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A53F71F02B9CCCDB004CC210 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71F12B9CCCEA004CC210 /* History.swift */,
+				A53F71F32B9CCD0C004CC210 /* HistoryType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A53F71F52B9CCDC7004CC210 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71E82B9CCB6F004CC210 /* HistoryRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A53F71F62B9CD1C2004CC210 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71F72B9CD1DA004CC210 /* CustomError.swift */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		A53F71FE2B9CD50C004CC210 /* IntrusionHistory */ = {
+			isa = PBXGroup;
+			children = (
+				A53F71FF2B9CD523004CC210 /* IntrusionHistoryViewModel.swift */,
+				A53F72012B9CD6BB004CC210 /* IntrusionHistoryViewState.swift */,
+			);
+			path = IntrusionHistory;
+			sourceTree = "<group>";
+		};
+		A53F72072B9D2C35004CC210 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72102B9D308B004CC210 /* Theme */,
+				A53F720A2B9D2C4D004CC210 /* Logic */,
+				A53F72092B9D2C43004CC210 /* Components */,
+				A53F72082B9D2C3E004CC210 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A53F72082B9D2C3E004CC210 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72362B9D3A03004CC210 /* Accessories */,
+				A53F721C2B9D31AF004CC210 /* HomeView.swift */,
+				A53F722A2B9D38AE004CC210 /* RoomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A53F72092B9D2C43004CC210 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A53F720E2B9D2FF9004CC210 /* RoomItem.swift */,
+				A53F721F2B9D3213004CC210 /* CircularLoader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A53F720A2B9D2C4D004CC210 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72372B9D3A10004CC210 /* Accessories */,
+				A53F722C2B9D38BF004CC210 /* Room */,
+				A53F72172B9D3165004CC210 /* Home */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		A53F72102B9D308B004CC210 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72112B9D309F004CC210 /* MyColors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A53F72132B9D30FD004CC210 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72322B9D3918004CC210 /* Extensions */,
+				A53F72152B9D3125004CC210 /* HomeManager.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A53F72142B9D3103004CC210 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A53F72172B9D3165004CC210 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72182B9D3176004CC210 /* HomeViewModel.swift */,
+				A53F721A2B9D3182004CC210 /* HomeViewState.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A53F72222B9D3879004CC210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A53F722C2B9D38BF004CC210 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				A53F722D2B9D38CB004CC210 /* RoomViewState.swift */,
+				A53F72302B9D38E0004CC210 /* RoomViewModel.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		A53F72322B9D3918004CC210 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72332B9D3922004CC210 /* HMAccessory.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A53F72362B9D3A03004CC210 /* Accessories */ = {
+			isa = PBXGroup;
+			children = (
+				A53F723E2B9D3AA0004CC210 /* LightbulbView.swift */,
+				A53F72402B9D41A2004CC210 /* MotionDetectorView.swift */,
+			);
+			path = Accessories;
+			sourceTree = "<group>";
+		};
+		A53F72372B9D3A10004CC210 /* Accessories */ = {
+			isa = PBXGroup;
+			children = (
+				A53F723B2B9D3A3D004CC210 /* MotionDetector */,
+				A53F72382B9D3A16004CC210 /* Lightbulb */,
+			);
+			path = Accessories;
+			sourceTree = "<group>";
+		};
+		A53F72382B9D3A16004CC210 /* Lightbulb */ = {
+			isa = PBXGroup;
+			children = (
+				A53F72392B9D3A25004CC210 /* LightbulbViewModel.swift */,
+			);
+			path = Lightbulb;
+			sourceTree = "<group>";
+		};
+		A53F723B2B9D3A3D004CC210 /* MotionDetector */ = {
+			isa = PBXGroup;
+			children = (
+				A53F723C2B9D3A54004CC210 /* MotionDetectorViewModel.swift */,
+			);
+			path = MotionDetector;
 			sourceTree = "<group>";
 		};
 		A54F31962B718BDA0017600B = {
@@ -153,6 +433,7 @@
 				A54F31A12B718BDA0017600B /* lumos */,
 				A54F31C92B718BDC0017600B /* lumos Watch App */,
 				A54F31A02B718BDA0017600B /* Products */,
+				A53F72222B9D3879004CC210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +449,7 @@
 		A54F31A12B718BDA0017600B /* lumos */ = {
 			isa = PBXGroup;
 			children = (
+				A53F71EB2B9CCC8F004CC210 /* Infrastructure */,
 				A534FC6C2B8FA75400DFAADB /* Domain */,
 				A534FC6B2B8FA73D00DFAADB /* Presentation */,
 				A5FAC0042B8D1CA50009F4DB /* lumos.entitlements */,
@@ -190,8 +472,12 @@
 		A54F31C92B718BDC0017600B /* lumos Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				A53F72212B9D33AD004CC210 /* lumos Watch App.entitlements */,
+				A53F72142B9D3103004CC210 /* Infrastructure */,
+				A53F72132B9D30FD004CC210 /* Domain */,
+				A53F720D2B9D2DB3004CC210 /* lumos-Watch-App-Info.plist */,
+				A53F72072B9D2C35004CC210 /* Presentation */,
 				A54F31CA2B718BDC0017600B /* lumosApp.swift */,
-				A54F31CC2B718BDC0017600B /* ContentView.swift */,
 				A54F31CE2B718BDD0017600B /* Assets.xcassets */,
 				A54F31D02B718BDD0017600B /* Preview Content */,
 			);
@@ -218,6 +504,9 @@
 		A55D39D82B94FC6D0020B659 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				A53F71FE2B9CD50C004CC210 /* IntrusionHistory */,
+				A53F71E12B9C8CC3004CC210 /* Accessories */,
+				A53F71D92B9C81FB004CC210 /* NewAccessory */,
 				A52AD9A42B951B53005D0CC3 /* Room */,
 				A55D39DE2B950E450020B659 /* NewRoom */,
 				A55D39DB2B9504BE0020B659 /* Home */,
@@ -254,18 +543,28 @@
 				A55D39C92B9494380020B659 /* Title.swift */,
 				A55D39CB2B9497450020B659 /* MyTextButton.swift */,
 				A52AD9A92B952673005D0CC3 /* AccessoryItem.swift */,
-				A52AD9AD2B96611B005D0CC3 /* LightItem.swift */,
-				A5ED7BD02B977C7B00EDF294 /* MotionDetectorItem.swift */,
+				A53F72052B9CE54F004CC210 /* HistoryList.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		A5ED7BD22B9A344200EDF294 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED7BD32B9A347500EDF294 /* HMAccessory.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A5FAC0072B8D20D40009F4DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A53F71E02B9C8CB7004CC210 /* Accessories */,
 				A54F31A42B718BDA0017600B /* HomeView.swift */,
 				A534FC692B8FA73600DFAADB /* NewRoomView.swift */,
 				A55D39C42B948FD60020B659 /* RoomView.swift */,
+				A53F71DE2B9C8599004CC210 /* NewAccessoryView.swift */,
+				A53F72032B9CD83F004CC210 /* IntrusionHistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +607,8 @@
 			dependencies = (
 			);
 			name = "lumos Watch App";
+			packageProductDependencies = (
+			);
 			productName = "lumos Watch App";
 			productReference = A54F31C52B718BDC0017600B /* lumos Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -378,15 +679,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53F72022B9CD6BB004CC210 /* IntrusionHistoryViewState.swift in Sources */,
+				A53F71E42B9C8CDA004CC210 /* MotionDetectorViewModel.swift in Sources */,
 				A5A7BA822B8D2A3C000B315A /* LumosBody.swift in Sources */,
 				A52AD9AA2B952673005D0CC3 /* AccessoryItem.swift in Sources */,
+				A53F71F22B9CCCEA004CC210 /* History.swift in Sources */,
 				A55D39C82B9490D30020B659 /* MyColors.swift in Sources */,
 				A55D39DD2B9504CD0020B659 /* HomeViewState.swift in Sources */,
 				A55D39E22B950E7E0020B659 /* NewRoomViewModel.swift in Sources */,
+				A5ED7BD42B9A347500EDF294 /* HMAccessory.swift in Sources */,
+				A53F72002B9CD523004CC210 /* IntrusionHistoryViewModel.swift in Sources */,
+				A53F71F82B9CD1DA004CC210 /* CustomError.swift in Sources */,
+				A53F71DF2B9C8599004CC210 /* NewAccessoryView.swift in Sources */,
 				A534FC702B8FAA9E00DFAADB /* MyButton.swift in Sources */,
+				A53F71DB2B9C8212004CC210 /* NewAccessoryViewState.swift in Sources */,
 				A55D39D32B94A5A10020B659 /* HomeViewModel.swift in Sources */,
 				A5A7BA842B8D2EFC000B315A /* RoomItem.swift in Sources */,
 				A54F31A52B718BDA0017600B /* HomeView.swift in Sources */,
+				A53F72062B9CE54F004CC210 /* HistoryList.swift in Sources */,
 				A5FAC0062B8D1FDC0009F4DB /* HomeManager.swift in Sources */,
 				A55D39E02B950E540020B659 /* NewRoomViewState.swift in Sources */,
 				A55D39CA2B9494380020B659 /* Title.swift in Sources */,
@@ -395,10 +705,16 @@
 				A54F31A32B718BDA0017600B /* lumosApp.swift in Sources */,
 				A55D39CC2B9497450020B659 /* MyTextButton.swift in Sources */,
 				A55D39C52B948FD60020B659 /* RoomView.swift in Sources */,
-				A52AD9AE2B96611B005D0CC3 /* LightItem.swift in Sources */,
+				A53F71ED2B9CCC9F004CC210 /* HistoryLocalRepository.swift in Sources */,
+				A53F72042B9CD83F004CC210 /* IntrusionHistoryView.swift in Sources */,
+				A53F71F42B9CCD0C004CC210 /* HistoryType.swift in Sources */,
+				A52AD9AE2B96611B005D0CC3 /* LightView.swift in Sources */,
+				A53F71E92B9CCB6F004CC210 /* HistoryRepository.swift in Sources */,
 				A52AD9A62B951B60005D0CC3 /* RoomViewState.swift in Sources */,
+				A53F71E72B9C97AA004CC210 /* LightBulbViewModel.swift in Sources */,
 				A534FC722B8FACB800DFAADB /* TextInput.swift in Sources */,
-				A5ED7BD12B977C7B00EDF294 /* MotionDetectorItem.swift in Sources */,
+				A53F71DD2B9C821E004CC210 /* NewAccessoryViewModel.swift in Sources */,
+				A5ED7BD12B977C7B00EDF294 /* MotionDetectorView.swift in Sources */,
 				A55D39C12B93A42A0020B659 /* CircularLoader.swift in Sources */,
 				A52AD9A82B951BAF005D0CC3 /* RoomViewModel.swift in Sources */,
 			);
@@ -408,8 +724,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A54F31CD2B718BDC0017600B /* ContentView.swift in Sources */,
+				A53F723D2B9D3A54004CC210 /* MotionDetectorViewModel.swift in Sources */,
+				A53F722B2B9D38AE004CC210 /* RoomView.swift in Sources */,
+				A53F722E2B9D38CB004CC210 /* RoomViewState.swift in Sources */,
+				A53F72192B9D3176004CC210 /* HomeViewModel.swift in Sources */,
+				A53F72162B9D3125004CC210 /* HomeManager.swift in Sources */,
+				A53F721B2B9D3182004CC210 /* HomeViewState.swift in Sources */,
+				A53F72342B9D3922004CC210 /* HMAccessory.swift in Sources */,
+				A53F723A2B9D3A25004CC210 /* LightbulbViewModel.swift in Sources */,
+				A53F72122B9D309F004CC210 /* MyColors.swift in Sources */,
+				A53F721D2B9D31AF004CC210 /* HomeView.swift in Sources */,
 				A54F31CB2B718BDC0017600B /* lumosApp.swift in Sources */,
+				A53F720F2B9D2FF9004CC210 /* RoomItem.swift in Sources */,
+				A53F723F2B9D3AA0004CC210 /* LightbulbView.swift in Sources */,
+				A53F72312B9D38E0004CC210 /* RoomViewModel.swift in Sources */,
+				A53F72412B9D41A2004CC210 /* MotionDetectorView.swift in Sources */,
+				A53F72202B9D3213004CC210 /* CircularLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,13 +873,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "lumos Watch App/lumos Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lumos Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 267F8UQ7GW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lumos-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = lumos;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Acces to your rooms, devices and scenes. They are required to use this app.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.joelan.lumos;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -557,7 +890,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumos.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumos.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -573,13 +906,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "lumos Watch App/lumos Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lumos Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 267F8UQ7GW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lumos-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = lumos;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Acces to your rooms, devices and scenes. They are required to use this app.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.joelan.lumos;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,7 +923,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumos.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumos.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -645,6 +981,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = lumos/lumos.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lumos/Preview Content\"";
@@ -666,6 +1003,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joelan.lumos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
