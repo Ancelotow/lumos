@@ -9,6 +9,7 @@ import Foundation
 import HomeKit
 
 class HomeManager: NSObject, ObservableObject, HMHomeManagerDelegate {
+    // Equivalent of Observer in Java/Kotlin
     @Published private(set) var home: HMHome?  {
         didSet {
             updateHome()
@@ -17,11 +18,12 @@ class HomeManager: NSObject, ObservableObject, HMHomeManagerDelegate {
     private let _manager = HMHomeManager()
     private static var _instance: HomeManager = HomeManager()
     public static var Instance: HomeManager {
+        // Can only get and not set. To protect the variable using the singleton
         get {
             return _instance
         }
     }
-    
+
     
     private override init() {
         super.init()

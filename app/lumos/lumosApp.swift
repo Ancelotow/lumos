@@ -12,6 +12,7 @@ import HomeKit
 struct lumosApp: App {
     var body: some Scene {
         WindowGroup {
+            // Allow to stack view. If not that, no UIView can work
             NavigationStack {
                 HomeView()
             }

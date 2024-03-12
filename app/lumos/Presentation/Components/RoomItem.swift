@@ -2,7 +2,7 @@
 //  RoomItem.swift
 //  lumos
 //
-//  Created by Owen Ancelot on 26/02/2024.
+//  Created by Manon Salsou on 26/02/2024.
 //
 
 import Foundation

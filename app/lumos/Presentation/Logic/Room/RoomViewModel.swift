@@ -30,7 +30,7 @@ class RoomViewModel: ObservableObject {
         self.stateDelete = .initial
         _bind()
     }
-    
+
     private func _bind() {
         cancellable = homeManager.$home
             .map { $0!.rooms.first(where: { $0.uniqueIdentifier == self.room.uniqueIdentifier }) }
